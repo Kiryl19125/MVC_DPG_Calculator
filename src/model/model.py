@@ -9,7 +9,7 @@ class Model:
         self.number_1 = 0
         self.number_2 = 0
 
-    def calculate(self, option: str) -> Union[int, str]:
+    def calculate(self, option: str) -> Union[float, str]:
         if option == "+":
             return self.number_1 + self.number_2
         elif option == "-":
@@ -18,7 +18,7 @@ class Model:
             return self.number_1 * self.number_2
         elif option == "/":
             if self.number_2 != 0:
-                return self.number_1 // self.number_2
+                return self.number_1 / self.number_2
             else:
                 return "Zero Division Error"
         else:
